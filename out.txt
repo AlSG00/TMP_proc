@@ -1,0 +1,9 @@
+Filled Container. 
+Container contains 5 elements.
+0: It is FICTION movie called add, Director's name = Name
+1: It is FICTION movie called ffff, Director's name = NoName
+2: It is CARTOON movie called aaa, Creation type = Drawned
+3: It is CARTOON movie called bbb, Creation type = Ragdoll
+4: It is CARTOON movie called ccc, Creation type = Plasticine
+Empty Container. 
+Container contains 0 elements.

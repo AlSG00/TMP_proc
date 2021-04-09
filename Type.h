@@ -3,5 +3,6 @@
 enum type
 {
 	CARTOON,
-	FICTION
+	FICTION,
+	DOCUMENTARY
 };

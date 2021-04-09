@@ -7,6 +7,7 @@ using namespace std;
 // Сигнатуры требуемых внешних функций
 void InCartoon(Cartoon &c, ifstream& ifst);
 void InFiction(Fiction &f, ifstream& ifst);
+void InDocumentary(Documentary& d, ifstream& ifst);
 
 // Ввод параметров обобщенной фигуры из файла
 Movie* In(ifstream& ifst)
@@ -47,6 +48,22 @@ Movie* In(ifstream& ifst)
 			Line.resize(49);
 			strcpy_s(mv->mName, 50, Line.c_str());
 			InFiction(mv->f, ifst);
+			return mv;
+		}
+	case 3:
+		mv = new Movie;
+		mv->mKey = type::DOCUMENTARY;
+		getline(ifst, Line); //Строка заносится в Line
+		getline(ifst, Line);
+		if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 100
+			strcpy_s(mv->mName, 50, Line.c_str());
+			InDocumentary(mv->d, ifst);
+			return mv;
+		}
+		else {
+			Line.resize(49);
+			strcpy_s(mv->mName, 50, Line.c_str());
+			InDocumentary(mv->d, ifst);
 			return mv;
 		}
 	default:

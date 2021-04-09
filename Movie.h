@@ -2,6 +2,7 @@
 #include "Type.h";
 #include "Cartoon.h"
 #include "Fiction.h"
+#include "Documentary.h"
 
 struct Movie
 {
@@ -10,5 +11,6 @@ struct Movie
 	union { // используем включение
 		Cartoon c;
 		Fiction f;
+		Documentary d;
 	};
 };

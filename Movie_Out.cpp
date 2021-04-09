@@ -5,6 +5,7 @@ using namespace std;
 
 void Out(Cartoon& c, ofstream& ofst);
 void Out(Fiction& f, ofstream& ofst);
+void Out(Documentary& d, ofstream& ofst);
 
 void Out(Movie& mv, ofstream& ofst) 
 {
@@ -17,6 +18,10 @@ void Out(Movie& mv, ofstream& ofst)
 	case type::FICTION:
 		ofst << "It is FICTION movie called " << mv.mName;
 		Out(mv.f, ofst);
+		break;
+	case type::DOCUMENTARY:
+		ofst << "It is DOCUMENTARY movie called " << mv.mName;
+		Out(mv.d, ofst);
 		break;
 	default:
 		ofst << "Incorrect movie!" << endl;

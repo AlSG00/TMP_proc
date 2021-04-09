@@ -1,2 +1,4 @@
-﻿  LINK : не найден или не выполнена сборка D:\TMP\TMP_proc\Debug\TMP_proc.exe при последней инкрементной компоновке; выполняется полная компоновка
+﻿  main.cpp
+D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  LINK : не найден или не выполнена сборка D:\TMP\TMP_proc\Debug\TMP_proc.exe при последней инкрементной компоновке; выполняется полная компоновка
   TMP_proc.vcxproj -> D:\TMP\TMP_proc\Debug\TMP_proc.exe

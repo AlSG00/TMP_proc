@@ -49,3 +49,8 @@ int VowelsCount(Movie& mv) {
 	}
 	return vowel;
 };
+
+bool Compare(Movie* first, Movie* second)
+{
+	return VowelsCount(*first) > VowelsCount(*second);
+};

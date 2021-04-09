@@ -16,3 +16,15 @@ void Out(Container& c, ofstream& ofst)
         Out(*(c.cont[i]), ofst);
     }
 }
+
+void OutCartoon(Container& c, ofstream& ofst) 
+{
+	ofst << "Only Cartoon movies." << endl;
+	for (int i = 0; i < c.len; i++) {
+		if (c.cont[i]->mKey == type::CARTOON) 
+		{
+			ofst << i << ": ";
+			Out(*(c.cont[i]), ofst);
+		}
+	}
+};

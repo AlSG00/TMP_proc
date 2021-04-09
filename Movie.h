@@ -6,6 +6,7 @@
 struct Movie
 {
 	type mKey;
+	char mCountry[50];
 	char mName[50];
 	union { // используем включение
 		Cartoon c;

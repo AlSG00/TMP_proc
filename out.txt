@@ -6,6 +6,8 @@ Container contains 5 elements.
 3: It is CARTOON movie called bbb, Creation type = Ragdoll
 4: It is CARTOON movie called ccc, Creation type = Plasticine
 Only Cartoon movies.
+0: 
+1: 
 2: It is CARTOON movie called aaa, Creation type = Drawned
 3: It is CARTOON movie called bbb, Creation type = Ragdoll
 4: It is CARTOON movie called ccc, Creation type = Plasticine

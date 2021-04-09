@@ -22,7 +22,7 @@ Movie* In(ifstream& ifst)
 		mv->mKey = type::CARTOON;
 		getline(ifst, Line); //Строка заносится в Line
 		getline(ifst, Line);
-		if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 100
+		if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 50
 			strcpy_s(mv->mName, 50, Line.c_str());
 			InCartoon(mv->c, ifst);
 			return mv;
@@ -38,7 +38,7 @@ Movie* In(ifstream& ifst)
 		mv->mKey = type::FICTION;
 		getline(ifst, Line); //Строка заносится в Line
 		getline(ifst, Line);
-		if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 100
+		if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 50
 			strcpy_s(mv->mName, 50, Line.c_str());
 			InFiction(mv->f, ifst);
 			return mv;
@@ -51,9 +51,9 @@ Movie* In(ifstream& ifst)
 		}
 	default:
 		char Junk[50]; //для мусора
-		ifst.getline(Junk, 50); //Здесь - выражение
-		ifst.getline(Junk, 50); //Здесь - уникальная характеристика
-		ifst.getline(Junk, 50); //Здесь - оценка
+		ifst.getline(Junk, 50);
+		ifst.getline(Junk, 50);
+		ifst.getline(Junk, 50);
 		return 0;
 	}
 	Line.clear();

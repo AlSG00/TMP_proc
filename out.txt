@@ -1,9 +1,14 @@
 Filled Container. 
 Container contains 5 elements.
 0: It is FICTION movie called add, Director's name = Name
+Count of vowels = 1
 1: It is FICTION movie called ffff, Director's name = NoName
+Count of vowels = 0
 2: It is CARTOON movie called aaa, Creation type = Drawned
+Count of vowels = 3
 3: It is CARTOON movie called bbb, Creation type = Ragdoll
+Count of vowels = 0
 4: It is CARTOON movie called ccc, Creation type = Plasticine
+Count of vowels = 0
 Empty Container. 
 Container contains 0 elements.

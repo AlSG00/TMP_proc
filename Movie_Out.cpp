@@ -5,6 +5,7 @@ using namespace std;
 
 void Out(Cartoon& c, ofstream& ofst);
 void Out(Fiction& f, ofstream& ofst);
+int VowelsCount(Movie& mv);
 
 void Out(Movie& mv, ofstream& ofst) 
 {
@@ -13,12 +14,38 @@ void Out(Movie& mv, ofstream& ofst)
 	case type::CARTOON:
 		ofst << "It is CARTOON movie called " << mv.mName;
 		Out(mv.c, ofst);
+		ofst << "Count of vowels = " << VowelsCount(mv) << endl;
 		break;
 	case type::FICTION:
 		ofst << "It is FICTION movie called " << mv.mName;
 		Out(mv.f, ofst);
+		ofst << "Count of vowels = " << VowelsCount(mv) << endl;
 		break;
 	default:
 		ofst << "Incorrect movie!" << endl;
 	}
+};
+
+int VowelsCount(Movie& mv) {
+	int vowel = 0;
+	int i = 0;
+	while (mv.mName[i] != '\0')
+	{
+		switch (mv.mName[i])
+		{
+		case 'A':
+		case 'a':
+		case 'E':
+		case 'e':
+		case 'I':
+		case 'i':
+		case 'O':
+		case 'o':
+		case 'U':
+		case 'u':
+			 vowel++;
+		}
+		i++;
+	}
+	return vowel;
 };

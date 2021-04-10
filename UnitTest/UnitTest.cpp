@@ -26,9 +26,9 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
 
-namespace TestLab4proc
+namespace UnitTest
 {
-	TEST_CLASS(TestLab4proc)
+	TEST_CLASS(UnitTest)
 	{
 	public:
 
@@ -79,11 +79,6 @@ namespace TestLab4proc
 			getline(fin_exp, expected, '\0');
 			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
-
-			
-			//int actual = c.len;
-			//Assert::AreEqual(7, actual); //OK
-			//Clear(c);
 		}
 		TEST_METHOD(Container_Sort_0) //Проверка функции Sort для пустого контейнера
 		{
@@ -147,7 +142,7 @@ namespace TestLab4proc
 			Container c;
 			Init(c);
 			In(c, ifst);
-			OutCartoon(c, ofst); //В выходном файле "Only movies."
+			OutCartoon(c, ofst); //В выходном файле "Only cartoons."
 			//тут сравнение двух файлов
 			string expected, actual;
 			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
@@ -191,7 +186,7 @@ namespace TestLab4proc
 			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
-		TEST_METHOD(Movie_CountOfVowel_0) //Проверка функции CountOfComma в случае 0 гласных
+		TEST_METHOD(Movie_CountOfVowel_0) //Проверка функции VowelCount в случае 0 гласных
 		{
 			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_0_vowels.txt"); //В выражении нет гласных
 			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
@@ -208,7 +203,7 @@ namespace TestLab4proc
 			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
-		TEST_METHOD(Movie_CountOfVowel_5) //Проверка функции CountOfComma в случае 5 гласных
+		TEST_METHOD(Movie_CountOfVowel_5) //Проверка функции VowelCount в случае 5 гласных
 		{
 			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_5_vowels.txt"); //В выражении 5 гласных
 			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");

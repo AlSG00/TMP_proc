@@ -27,4 +27,12 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="in_0.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="in_7.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

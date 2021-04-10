@@ -1,18 +1,26 @@
 Filled Container. 
 Container contains 6 elements.
-0: It is FICTION movie called add, Director's name = dirName, Made in : Rus
-1: It is FICTION movie called ffff, Director's name = NoName, Made in : Eng
-2: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger
-3: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus
-4: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : FRance
-5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US
+0: It is FICTION movie called add, Director's name = dirNameCount of vowels = 1
+, Made in : Rus1: It is FICTION movie called ffff, Director's name = NoNameCount of vowels = 0
+, Made in : Eng2: It is CARTOON movie called aaa, Creation type = DrawnedCount of vowels = 3
+, Made in : Ger3: It is CARTOON movie called bbb, Creation type = RagdollCount of vowels = 0
+, Made in : Aus4: It is CARTOON movie called ccc, Creation type = PlasticineCount of vowels = 0
+, Made in : FRance5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US
 
+Sorted container.
+Container contains 6 elements.
+0: It is FICTION movie called ffff, Director's name = NoNameCount of vowels = 0
+, Made in : Eng1: It is CARTOON movie called bbb, Creation type = RagdollCount of vowels = 0
+, Made in : Aus2: It is CARTOON movie called ccc, Creation type = PlasticineCount of vowels = 0
+, Made in : FRance3: It is FICTION movie called add, Director's name = dirNameCount of vowels = 1
+, Made in : Rus4: It is CARTOON movie called aaa, Creation type = DrawnedCount of vowels = 3
+, Made in : Ger5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US
 Only Cartoon movies.
 0: 
-1: 
-2: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger
-3: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus
-4: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : FRance
-5: 
+1: It is CARTOON movie called bbb, Creation type = RagdollCount of vowels = 0
+, Made in : Aus2: It is CARTOON movie called ccc, Creation type = PlasticineCount of vowels = 0
+, Made in : FRance3: 
+4: It is CARTOON movie called aaa, Creation type = DrawnedCount of vowels = 3
+, Made in : Ger5: 
 Empty Container. 
 Container contains 0 elements.

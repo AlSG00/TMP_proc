@@ -5,7 +5,7 @@ using namespace std;
 
 void Out(Cartoon& c, ofstream& ofst)
 {
-	ofst << ", Creation type = ";
+	ofst << ", Creation type = " ;
 	if (c.mType == 0)
 	{
 		ofst << "Drawned";

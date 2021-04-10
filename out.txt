@@ -1,26 +1,28 @@
 Filled Container. 
 Container contains 6 elements.
-0: It is FICTION movie called add, Director's name = dirNameCount of vowels = 1
-, Made in : Rus1: It is FICTION movie called ffff, Director's name = NoNameCount of vowels = 0
-, Made in : Eng2: It is CARTOON movie called aaa, Creation type = DrawnedCount of vowels = 3
-, Made in : Ger3: It is CARTOON movie called bbb, Creation type = RagdollCount of vowels = 0
-, Made in : Aus4: It is CARTOON movie called ccc, Creation type = PlasticineCount of vowels = 0
-, Made in : FRance5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US
+0: It is FICTION movie called add, Director's name = dirName, Made in : Rus, Count of vowels = 1
+1: It is FICTION movie called ffff, Director's name = NoName, Made in : Eng, Count of vowels = 0
+2: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger, Count of vowels = 3
+3: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus, Count of vowels = 0
+4: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : FRance, Count of vowels = 0
+5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US, Count of vowels = 4
+
 
 Sorted container.
 Container contains 6 elements.
-0: It is FICTION movie called ffff, Director's name = NoNameCount of vowels = 0
-, Made in : Eng1: It is CARTOON movie called bbb, Creation type = RagdollCount of vowels = 0
-, Made in : Aus2: It is CARTOON movie called ccc, Creation type = PlasticineCount of vowels = 0
-, Made in : FRance3: It is FICTION movie called add, Director's name = dirNameCount of vowels = 1
-, Made in : Rus4: It is CARTOON movie called aaa, Creation type = DrawnedCount of vowels = 3
-, Made in : Ger5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US
+0: It is FICTION movie called ffff, Director's name = NoName, Made in : Eng, Count of vowels = 0
+1: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus, Count of vowels = 0
+2: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : FRance, Count of vowels = 0
+3: It is FICTION movie called add, Director's name = dirName, Made in : Rus, Count of vowels = 1
+4: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger, Count of vowels = 3
+5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US, Count of vowels = 4
+
 Only Cartoon movies.
 0: 
-1: It is CARTOON movie called bbb, Creation type = RagdollCount of vowels = 0
-, Made in : Aus2: It is CARTOON movie called ccc, Creation type = PlasticineCount of vowels = 0
-, Made in : FRance3: 
-4: It is CARTOON movie called aaa, Creation type = DrawnedCount of vowels = 3
-, Made in : Ger5: 
+1: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus, Count of vowels = 0
+2: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : FRance, Count of vowels = 0
+3: 
+4: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger, Count of vowels = 3
+5: 
 Empty Container. 
 Container contains 0 elements.

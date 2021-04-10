@@ -5,5 +5,5 @@ using namespace std;
 
 void Out(Fiction& f, ofstream& ofst) 
 {
-	ofst << ", Director's name = " << f.mDirector;
+	ofst << ", Director's name = " << f.mDirector ;
 }

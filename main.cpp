@@ -17,6 +17,7 @@ int main(int argc, char* argv[]) {
 			"Waited: command infile outfile" << endl;
 		exit(1);
 	}
+
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
 	cout << "Start" << endl;

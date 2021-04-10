@@ -19,7 +19,7 @@ void Out(Container& c, ofstream& ofst)
 
 void OutCartoon(Container& c, ofstream& ofst) 
 {
-	ofst << "Only Cartoon movies." << endl;
+	ofst << endl << "Only Cartoon movies." << endl;
 	for (int i = 0; i < c.len; i++) 
 	{
 		ofst << i << ": ";

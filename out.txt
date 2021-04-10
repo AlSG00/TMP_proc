@@ -1,19 +1,10 @@
 Filled Container. 
-<<<<<<< HEAD
 Container contains 6 elements.
-0: It is FICTION movie called add, Director's name = Name
-1: It is FICTION movie called ffff, Director's name = NoName
-2: It is CARTOON movie called aaa, Creation type = Drawned
-3: It is CARTOON movie called bbb, Creation type = Ragdoll
-4: It is CARTOON movie called ccc, Creation type = Plasticine
-5: It is DOCUMENTARY movie called Terminator, Release Year = 1986
-=======
-Container contains 5 elements.
-0: It is FICTION movie called add, Director's name = Name, Made in : Rus
+0: It is FICTION movie called add, Director's name = dirName, Made in : Rus
 1: It is FICTION movie called ffff, Director's name = NoName, Made in : Eng
 2: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger
 3: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus
-4: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : 
->>>>>>> 2.3
+4: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : FRance
+5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US
 Empty Container. 
 Container contains 0 elements.

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-﻿  Movie_Out.cpp
-D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-=======
 ﻿  Cartoon_Out.cpp
   Fiction_Out.cpp
   Создание кода...
->>>>>>> 2.3
   TMP_proc.vcxproj -> D:\TMP\TMP_proc\Debug\TMP_proc.exe

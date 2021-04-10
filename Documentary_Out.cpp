@@ -5,5 +5,5 @@ using namespace std;
 
 void Out(Documentary& d, ofstream& ofst)
 {
-	ofst << ", Release Year = " << d.mYear << endl;
+	ofst << ", Release Year = " << d.mYear;
 }

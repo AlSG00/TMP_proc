@@ -26,12 +26,14 @@ Movie* In(ifstream& ifst)
 		if (Line.length() < 50) { //ѕроверка на переполнение - если длина Line < 50
 			strcpy_s(mv->mName, 50, Line.c_str());
 			InCartoon(mv->c, ifst);
+			ifst >> mv->mCountry;
 			return mv;
 		}
 		else {
 			Line.resize(49);
 			strcpy_s(mv->mName, 50, Line.c_str());
 			InCartoon(mv->c, ifst);
+			ifst >> mv->mCountry;
 			return mv;
 		}
 	case 2:
@@ -42,12 +44,14 @@ Movie* In(ifstream& ifst)
 		if (Line.length() < 50) { //ѕроверка на переполнение - если длина Line < 50
 			strcpy_s(mv->mName, 50, Line.c_str());
 			InFiction(mv->f, ifst);
+			ifst >> mv->mCountry;
 			return mv;
 		}
 		else {
 			Line.resize(49);
 			strcpy_s(mv->mName, 50, Line.c_str());
 			InFiction(mv->f, ifst);
+			ifst >> mv->mCountry;
 			return mv;
 		}
 	case 3:

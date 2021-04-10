@@ -8,14 +8,14 @@ void Out(Cartoon& c, ofstream& ofst)
 	ofst << ", Creation type = ";
 	if (c.mType == 0)
 	{
-		ofst << "Drawned" << endl;
+		ofst << "Drawned";
 	}
 	else if (c.mType == 1)
 	{
-		ofst << "Ragdoll" << endl;
+		ofst << "Ragdoll";
 	}
 	else if (c.mType == 2)
 	{
-		ofst << "Plasticine" << endl;
+		ofst << "Plasticine";
 	}
 }

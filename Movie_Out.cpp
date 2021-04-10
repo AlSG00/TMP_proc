@@ -26,4 +26,5 @@ void Out(Movie& mv, ofstream& ofst)
 	default:
 		ofst << "Incorrect movie!" << endl;
 	}
+	ofst << ", Made in : " << mv.mCountry << endl;
 };

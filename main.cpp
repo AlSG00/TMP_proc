@@ -9,6 +9,7 @@ void Init(Container& c);
 void Clear(Container& c);
 void In(Container& c, ifstream& ifst);
 void Out(Container& c, ofstream& ofst);
+void OutCartoon(Container& c, ofstream& ofst);
 
 int main(int argc, char* argv[]) {
 	if (argc != 3) {
@@ -24,6 +25,7 @@ int main(int argc, char* argv[]) {
 	In(c, ifst);
 	ofst << "Filled Container. " << endl;
 	Out(c, ofst);
+	OutCartoon(c, ofst);
 	Clear(c);
 	ofst << "Empty Container. " << endl;
 	Out(c, ofst);

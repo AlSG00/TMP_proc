@@ -12,9 +12,12 @@ d:\tmp\tmp_proc\debug\documentary_in.obj
 d:\tmp\tmp_proc\debug\container_out.obj
 d:\tmp\tmp_proc\debug\container_in.obj
 d:\tmp\tmp_proc\debug\container_constr.obj
-d:\tmp\tmp_proc\debug\tmp_proc.ilk
 d:\tmp\tmp_proc\debug\tmp_proc.exe
+d:\tmp\tmp_proc\debug\tmp_proc.ilk
 d:\tmp\tmp_proc\debug\tmp_proc.pdb
+d:\tmp\tmp_proc\debug\unittest.ilk
+d:\tmp\tmp_proc\debug\unittest.exp
+d:\tmp\tmp_proc\debug\unittest.pdb
 d:\tmp\tmp_proc\debug\tmp_proc.tlog\cl.command.1.tlog
 d:\tmp\tmp_proc\debug\tmp_proc.tlog\cl.read.1.tlog
 d:\tmp\tmp_proc\debug\tmp_proc.tlog\cl.write.1.tlog

@@ -26,8 +26,6 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
 
-int Difference(ifstream& ifst_1, ifstream& ifst_2);
-
 namespace TestLab4proc
 {
 	TEST_CLASS(TestLab4proc)
@@ -36,169 +34,200 @@ namespace TestLab4proc
 
 		TEST_METHOD(Container_In_7) //Проверка функции In для контейнера
 		{
-			ifstream ifst("in_7.txt"); //В файле 7 мудростей
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_7.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 7);//OK
+			int actual = c.len;
+			Assert::AreEqual(7, actual);//OK
 			Clear(c);
 		}
 		TEST_METHOD(Container_In_0) //Проверка функции In для контейнера
 		{
-			ifstream ifst("in_0.txt"); //В файле пусто
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_0.txt"); //В файле пусто
 			Container c;
 			Init(c);
 			In(c, ifst);
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 0);//OK
+			int actual = c.len;
+			Assert::AreEqual(0, actual);//OK
 			Clear(c);
 		}
-		TEST_METHOD(Wisdom_In_7) //Проверка функции In для класса wisdom
+		TEST_METHOD(Movie_In_3) //Проверка функции In для Movie
 		{
-			ifstream ifst("in_7_with_incorrect_keys.txt"); //В файле 7 мудростей, 3 мудрости с неправильными ключами
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_3_with_incorrect_keys.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 4);//OK
+			int actual = c.len;
+			Assert::AreEqual(2, actual);//OK
 			Clear(c);
 		}
 		TEST_METHOD(Container_Sort_7) //Проверка функции Sort для контейнера
 		{
-			ifstream ifst("in_7.txt"); //В файле 7 мудростей
-			ofstream ofst("out_7.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_7.txt"); //В файле 7 фильмов
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
 			Sort(c); // ОК, сортировка прошла как обычно
 			Out(c, ofst);
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 7); //OK
+			//тут сравнение двух файлов
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_7_SORTED.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
+
+			
+			//int actual = c.len;
+			//Assert::AreEqual(7, actual); //OK
+			//Clear(c);
 		}
 		TEST_METHOD(Container_Sort_0) //Проверка функции Sort для пустого контейнера
 		{
-			ifstream ifst("in_0.txt"); //В файле пусто
-			ofstream ofst("out_0.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_0.txt"); //В файле пусто
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
 			Sort(c); //OK, сортировка не произошла
 			Out(c, ofst); //В выходном файле "Container contents 0 elements."
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 0); //OK
+			//тут сравнение двух файлов
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_0_SORTED.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
 		TEST_METHOD(Container_Sort_1) //Проверка функции Sort для контейнера с одним элементом
 		{
-			ifstream ifst("in_1.txt"); //В файле один элемент
-			ofstream ofst("out_1.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_1.txt"); //В файле один элемент
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
 			Sort(c);  //OK, сортировка не произошла
 			Out(c, ofst); //В выходном файле "Container contents 1 elements."
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 1); //OK
+			//тут сравнение двух файлов
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_1_SORTED.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
 		TEST_METHOD(Container_Sort_2) //Проверка функции Sort для контейнера с двумя элементами
 		{
-			ifstream ifst("in_2.txt"); //В файле два элемента
-			ofstream ofst("out_2.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_2.txt"); //В файле два элемента
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
 			Sort(c);  //OK, сортировка ведет себя адекватно 
 			Out(c, ofst); //В выходном файле "Container contents 2 elements."
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 2); //OK
+
+			//тут сравнение двух файлов
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_2_SORTED.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
-		TEST_METHOD(Container_OutAphorisms_0) //Проверка функции OutAphorisms для пустого контейнера
+		TEST_METHOD(Container_OutCartoon_0) //Проверка функции OutCartoon для пустого контейнера
 		{
-			ifstream ifst("in_0.txt"); //В файле пусто
-			ofstream ofst("out_0.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_0.txt"); //В файле пусто
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
-			OutCartoon(c, ofst); //В выходном файле "Only aphorisms."
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 0); //OK
+			OutCartoon(c, ofst); //В выходном файле "Only movies."
+			//тут сравнение двух файлов
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_0_IDEAL.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
-		TEST_METHOD(Container_OutAphorisms_without_aphors) //Проверка функции OutAphorisms контейнера без афоризмов
+		TEST_METHOD(Container_OutCartoon_without_cartoons) //Проверка функции OutCartoon контейнера без cartoons
 		{
-			ifstream ifst("in_5_without_aphors.txt"); //В файле 5 мудростей
-			ofstream ofst("out_5_without_aphors.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_5_without_cartoons.txt"); //В файле 5 фильмов
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
-			OutCartoon(c, ofst); //В выходном файле "Only aphorisms."
-			int real_len = c.len;
-			Assert::AreEqual(real_len, 5); //OK
+			OutCartoon(c, ofst); //В выходном файле "Only cartoons."
+			//тут сравнение двух файлов
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_5_without_cartoons_IDEAL.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
-		TEST_METHOD(Wisdom_InData_OverBuf) //Проверка функции InData на поведение в случае переполнения
+		TEST_METHOD(Movie_InData_OverBuf) //Проверка функции InData на поведение в случае переполнения
 		{
-			ifstream ifst("in_1_overbuf.txt"); //В файле один афоризм с выражением > 100 символов
-			ofstream ofst("out_1_overbuf.txt");
-			ifstream ifst_IDEAL("in_1_overbuf_IDEAL.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_1_overbuf.txt"); //В файле один cartoon с выражением > 50 символов
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
 			Out(c, ofst);
 			//тут сравнение двух файлов
-			ifstream ifst_to_cmp("out_1_overbuf.txt");
-			Assert::AreEqual(Difference(ifst_to_cmp, ifst_IDEAL), 1); //OK
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_1_overbuf_IDEAL.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
-		TEST_METHOD(Wisdom_CountOfComma_0) //Проверка функции CountOfComma в случае 0 запятых
+		TEST_METHOD(Movie_CountOfVowel_0) //Проверка функции CountOfComma в случае 0 гласных
 		{
-			ifstream ifst("in_0_commas.txt"); //В выражении нет запятых
-			ofstream ofst("out_0_commas.txt");
-			ifstream ifst_IDEAL("out_0_commas_IDEAL.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_0_vowels.txt"); //В выражении нет гласных
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
 			Out(c, ofst);
 			//тут сравнение двух файлов
-			ifstream ifst_to_cmp("out_0_commas.txt");
-			Assert::AreEqual(Difference(ifst_to_cmp, ifst_IDEAL), 1); //OK
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_0_vowels_IDEAL.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
-		TEST_METHOD(Wisdom_CountOfComma_1) //Проверка функции CountOfComma в случае 1 запятых
+		TEST_METHOD(Movie_CountOfVowel_5) //Проверка функции CountOfComma в случае 5 гласных
 		{
-			ifstream ifst("in_1_comma.txt"); //В выражении 1 запятая
-			ofstream ofst("out_1_comma.txt");
-			ifstream ifst_IDEAL("out_1_comma_IDEAL.txt");
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_5_vowels.txt"); //В выражении 5 гласных
+			ofstream ofst("D:/TMP/TMP_proc/UnitTest/out.txt");
 			Container c;
 			Init(c);
 			In(c, ifst);
 			Out(c, ofst);
 			//тут сравнение двух файлов
-			ifstream ifst_to_cmp("out_1_comma.txt");
-			Assert::AreEqual(Difference(ifst_to_cmp, ifst_IDEAL), 1); //OK
-			Clear(c);
-		}
-		TEST_METHOD(Wisdom_CountOfComma_5) //Проверка функции CountOfComma в случае 5 запятых
-		{
-			ifstream ifst("in_5_commas.txt"); //В выражении 5 запятых
-			ofstream ofst("out_5_commas.txt");
-			ifstream ifst_IDEAL("out_5_commas_IDEAL.txt");
-			Container c;
-			Init(c);
-			In(c, ifst);
-			Out(c, ofst);
-			//тут сравнение двух файлов
-			ifstream ifst_to_cmp("out_5_commas.txt");
-			Assert::AreEqual(Difference(ifst_to_cmp, ifst_IDEAL), 1); //OK
+			string expected, actual;
+			ifstream fin_act("D:/TMP/TMP_proc/UnitTest/out.txt");
+			ifstream fin_exp("D:/TMP/TMP_proc/UnitTest/out_5_vowels_IDEAL.txt");
+			getline(fin_act, actual, '\0');
+			getline(fin_exp, expected, '\0');
+			Assert::AreEqual(expected, actual); //OK
 			Clear(c);
 		}
 		TEST_METHOD(Container_Clean_0) //Проверка очистки контейнера при отсутствии элементов
 		{
-			ifstream ifst("in_0.txt"); //В файле пусто
+			ifstream ifst("D:/TMP/TMP_proc/UnitTest/in_0.txt"); //В файле пусто
 			Container c;
 			Init(c);
 			In(c, ifst);
@@ -206,18 +235,4 @@ namespace TestLab4proc
 			Assert::AreEqual(c.len, 0); //OK
 		}
 	};
-}
-
-int Difference(ifstream& ifst_1, ifstream& ifst_2)
-{
-	char ch_1 = '0';
-	char ch_2 = '0';
-
-	while (ifst_1.get(ch_1) && ifst_2.get(ch_2)) {
-		if (ch_1 != ch_2)
-		{
-			return 0;
-		}
-	}
-	return 1;
 }

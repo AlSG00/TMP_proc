@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="Container_Constr.cpp" />
     <ClCompile Include="Container_In.cpp" />
+    <ClCompile Include="Container_MultiMethod.cpp" />
     <ClCompile Include="Container_Out.cpp" />
     <ClCompile Include="Fiction_In.cpp" />
     <ClCompile Include="Fiction_Out.cpp" />

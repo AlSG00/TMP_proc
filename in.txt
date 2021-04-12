@@ -1,7 +1,4 @@
 2
-add
-Name
-2
 ffff
 NoName
 1
@@ -9,7 +6,7 @@ aaa
 0
 1
 bbb
-1
-1
+2
+2
 ccc
 2

@@ -5,5 +5,13 @@ using namespace std;
 
 void Out(Documentary& d, ofstream& ofst)
 {
-	ofst << ", Release Year = " << d.mYear;
+	if (1900 > d.mYear || 2030 < d.mYear)
+	{
+		ofst << ", and there is ERROR in Year ";
+	}
+	else
+	{
+		ofst << ", Release Year = " << d.mYear;
+	}
+	//ofst << ", Release Year = " << d.mYear;
 }

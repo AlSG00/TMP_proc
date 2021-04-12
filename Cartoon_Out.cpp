@@ -5,17 +5,24 @@ using namespace std;
 
 void Out(Cartoon& c, ofstream& ofst)
 {
-	ofst << ", Creation type = " ;
-	if (c.mType == 0)
+	if (!(c.mType == 0 || c.mType == 1 || c.mType == 2))
 	{
-		ofst << "Drawned";
+		ofst << ", and there is ERROR in Type ";
 	}
-	else if (c.mType == 1)
+	else
 	{
-		ofst << "Ragdoll";
-	}
-	else if (c.mType == 2)
-	{
-		ofst << "Plasticine";
+		ofst << ", Creation type = ";
+		if (c.mType == 0)
+		{
+			ofst << "Drawned";
+		}
+		else if (c.mType == 1)
+		{
+			ofst << "Ragdoll";
+		}
+		else if (c.mType == 2)
+		{
+			ofst << "Plasticine";
+		}
 	}
 }

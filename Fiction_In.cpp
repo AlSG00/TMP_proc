@@ -1,4 +1,4 @@
-#include <fstream>
+п»ї#include <fstream>
 #include <string>
 #include "Fiction.h"
 
@@ -6,14 +6,19 @@ using namespace std;
 
 void InFiction(Fiction &f, ifstream& ifst)
 {
-	string Line; //Временное решение на случай переполнения
-	getline(ifst, Line); //Строка заносится в Line
-	if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 50
-		strcpy_s(f.mDirector, 50, Line.c_str());
-	}
-	else {
-		Line.resize(49);
-		strcpy_s(f.mDirector, 50, Line.c_str());
-	}
+	string Line;
+	getline(ifst, Line); //Г‘ГІГ°Г®ГЄГ  Г§Г Г­Г®Г±ГЁГІГ±Гї Гў Line
+	Line.resize(49);
+	strcpy_s(f.mDirector, 50, Line.c_str());
+
+	//string Line; //Р’СЂРµРјРµРЅРЅРѕРµ СЂРµС€РµРЅРёРµ РЅР° СЃР»СѓС‡Р°Р№ РїРµСЂРµРїРѕР»РЅРµРЅРёСЏ
+	//getline(ifst, Line); //РЎС‚СЂРѕРєР° Р·Р°РЅРѕСЃРёС‚СЃСЏ РІ Line
+	//if (Line.length() < 50) { //РџСЂРѕРІРµСЂРєР° РЅР° РїРµСЂРµРїРѕР»РЅРµРЅРёРµ - РµСЃР»Рё РґР»РёРЅР° Line < 50
+	//	strcpy_s(f.mDirector, 50, Line.c_str());
+	//}
+	//else {
+	//	Line.resize(49);
+	//	strcpy_s(f.mDirector, 50, Line.c_str());
+	//}
 	Line.clear();
 }

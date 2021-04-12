@@ -1,10 +1,97 @@
 Filled Container. 
-Container contains 6 elements.
+Container contains 7 elements.
 0: It is FICTION movie called add, Director's name = Name
-1: It is FICTION movie called ffff, Director's name = NoName
-2: It is CARTOON movie called aaa, Creation type = Drawned
-3: It is CARTOON movie called bbb, Creation type = Ragdoll
-4: It is CARTOON movie called ccc, Creation type = Plasticine
-5: It is DOCUMENTARY movie called Terminator, Release Year = 1986
+1: It is CARTOON movie called aaa, Creation type = Drawned
+2: It is DOCUMENTARY movie called Terminator, Release Year = 1986
+3: It is DOCUMENTARY movie called Terminator2, Release Year = 1989
+4: It is CARTOON movie called bbb, Creation type = Ragdoll
+5: It is FICTION movie called ffff, Director's name = NoName
+6: It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+Multimethod.
+FICTION and CARTOON.
+It is FICTION movie called add, Director's name = Name
+It is CARTOON movie called aaa, Creation type = Drawned
+
+FICTION and DOCUMENTARY.
+It is FICTION movie called add, Director's name = Name
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+FICTION and DOCUMENTARY.
+It is FICTION movie called add, Director's name = Name
+It is DOCUMENTARY movie called Terminator2, Release Year = 1989
+
+FICTION and CARTOON.
+It is FICTION movie called add, Director's name = Name
+It is CARTOON movie called bbb, Creation type = Ragdoll
+
+FICTION and FICTION.
+It is FICTION movie called add, Director's name = Name
+It is FICTION movie called ffff, Director's name = NoName
+
+FICTION and DOCUMENTARY.
+It is FICTION movie called add, Director's name = Name
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+CARTOON and DOCUMENTARY.
+It is CARTOON movie called aaa, Creation type = Drawned
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+CARTOON and DOCUMENTARY.
+It is CARTOON movie called aaa, Creation type = Drawned
+It is DOCUMENTARY movie called Terminator2, Release Year = 1989
+
+CARTOON and CARTOON.
+It is CARTOON movie called aaa, Creation type = Drawned
+It is CARTOON movie called bbb, Creation type = Ragdoll
+
+CARTOON and FICTION.
+It is CARTOON movie called aaa, Creation type = Drawned
+It is FICTION movie called ffff, Director's name = NoName
+
+CARTOON and DOCUMENTARY.
+It is CARTOON movie called aaa, Creation type = Drawned
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+DOCUMENTARY and DOCUMENTARY.
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+It is DOCUMENTARY movie called Terminator2, Release Year = 1989
+
+DOCUMENTARY and CARTOON.
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+It is CARTOON movie called bbb, Creation type = Ragdoll
+
+DOCUMENTARY and FICTION.
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+It is FICTION movie called ffff, Director's name = NoName
+
+DOCUMENTARY and DOCUMENTARY.
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+DOCUMENTARY and CARTOON.
+It is DOCUMENTARY movie called Terminator2, Release Year = 1989
+It is CARTOON movie called bbb, Creation type = Ragdoll
+
+DOCUMENTARY and FICTION.
+It is DOCUMENTARY movie called Terminator2, Release Year = 1989
+It is FICTION movie called ffff, Director's name = NoName
+
+DOCUMENTARY and DOCUMENTARY.
+It is DOCUMENTARY movie called Terminator2, Release Year = 1989
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+CARTOON and FICTION.
+It is CARTOON movie called bbb, Creation type = Ragdoll
+It is FICTION movie called ffff, Director's name = NoName
+
+CARTOON and DOCUMENTARY.
+It is CARTOON movie called bbb, Creation type = Ragdoll
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
+FICTION and DOCUMENTARY.
+It is FICTION movie called ffff, Director's name = NoName
+It is DOCUMENTARY movie called Terminator, Release Year = 1986
+
 Empty Container. 
 Container contains 0 elements.

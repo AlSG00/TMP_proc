@@ -1,6 +1,6 @@
 Filled Container. 
 Container contains 6 elements.
-0: It is FICTION movie called add0000000000000000000000000000000000000000000000, Director's name = dirName000000000000000000000000000000000000000000, Made in : Rus0000000000000000000000000000000000000000000000, Count of vowels = 1
+0: It is FICTION movie called add, Director's name = dirName, Made in : Rus, Count of vowels = 1
 1: It is FICTION movie called ffff, Director's name = NoName, Made in : Eng, Count of vowels = 0
 2: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger, Count of vowels = 3
 3: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus, Count of vowels = 0
@@ -13,7 +13,7 @@ Container contains 6 elements.
 0: It is FICTION movie called ffff, Director's name = NoName, Made in : Eng, Count of vowels = 0
 1: It is CARTOON movie called bbb, Creation type = Ragdoll, Made in : Aus, Count of vowels = 0
 2: It is CARTOON movie called ccc, Creation type = Plasticine, Made in : FRance, Count of vowels = 0
-3: It is FICTION movie called add0000000000000000000000000000000000000000000000, Director's name = dirName000000000000000000000000000000000000000000, Made in : Rus0000000000000000000000000000000000000000000000, Count of vowels = 1
+3: It is FICTION movie called add, Director's name = dirName, Made in : Rus, Count of vowels = 1
 4: It is CARTOON movie called aaa, Creation type = Drawned, Made in : Ger, Count of vowels = 3
 5: It is DOCUMENTARY movie called Terminator, Release Year = 1986, Made in : US, Count of vowels = 4
 

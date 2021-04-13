@@ -22,6 +22,11 @@ int main(int argc, char* argv[]) {
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
 	cout << "Start" << endl;
+	if (!ifst)
+	{
+		cout << "No input file!" << endl;
+		return 0;
+	}
 	Container c;
 	Init(c);
 	In(c, ifst);

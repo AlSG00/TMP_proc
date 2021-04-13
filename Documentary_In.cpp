@@ -9,7 +9,8 @@ void InDocumentary(Documentary& d, std::ifstream& ifst)
 	int Line;
 	ifst >> Line;
 
-	if (ifst.fail())
+	//Функция завершается при получении данных неверного формата
+	if (ifst.fail())	
 	{
 		return;
 	}
@@ -17,5 +18,4 @@ void InDocumentary(Documentary& d, std::ifstream& ifst)
 	{
 		d.mYear = Line;
 	}
-	//ifst >> d.mYear;
 }

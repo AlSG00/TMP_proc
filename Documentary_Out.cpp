@@ -5,7 +5,7 @@ using namespace std;
 
 void Out(Documentary& d, ofstream& ofst)
 {
-	if (1900 > d.mYear || 2030 < d.mYear)
+	if (1900 > d.mYear || 2030 < d.mYear)		//ограничение на вводимую дату
 	{
 		ofst << ", and there is ERROR in Year ";
 	}
@@ -13,5 +13,4 @@ void Out(Documentary& d, ofstream& ofst)
 	{
 		ofst << ", Release Year = " << d.mYear;
 	}
-	//ofst << ", Release Year = " << d.mYear;
 }

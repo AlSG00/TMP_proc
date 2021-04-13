@@ -5,5 +5,5 @@ using namespace std;
 
 struct Fiction
 {
-	char mDirector[50];
+	char mDirector[50]; // Имя режиссера
 };

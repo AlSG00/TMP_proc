@@ -5,5 +5,5 @@ using namespace std;
 
 struct Documentary
 {
-	int mYear;
+	int mYear; // Год создания
 };

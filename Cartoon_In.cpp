@@ -8,9 +8,10 @@ void InCartoon(Cartoon &c, std::ifstream& ifst)
 {
 	int Line;
 	ifst >> Line;
-	if (ifst.fail())
+
+	//Функция завершается при получении данных неверного формата
+	if (ifst.fail())	
 	{
-		//mType = NULL;
 		return;
 	}
 	else
@@ -28,20 +29,4 @@ void InCartoon(Cartoon &c, std::ifstream& ifst)
 			c.mType = Cartoon::PLASTICINE;
 		}
 	}
-
-	//string Data;
-	//int mType;
-	//ifst >> mType;
-	//if (mType == 0)
-	//{
-	//	c.mType = Cartoon::DRAWN;
-	//}
-	//else if (mType == 1)
-	//{
-	//	c.mType = Cartoon::RAGDOLL;
-	//}
-	//else if (mType == 2)
-	//{
-	//	c.mType = Cartoon::PLASTICINE;
-	//}
 }

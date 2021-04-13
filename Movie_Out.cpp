@@ -15,17 +15,14 @@ void Out(Movie& mv, ofstream& ofst)
 	case type::CARTOON:
 		ofst << "It is CARTOON movie called " << mv.mName;
 		Out(mv.c, ofst);
-		//ofst << ", Count of vowels = " << VowelsCount(mv);
 		break;
 	case type::FICTION:
 		ofst << "It is FICTION movie called " << mv.mName;
 		Out(mv.f, ofst);
-		//ofst << ", Count of vowels = " << VowelsCount(mv);
 		break;
 	case type::DOCUMENTARY:
 		ofst << "It is DOCUMENTARY movie called " << mv.mName;
 		Out(mv.d, ofst);
-		//ofst << ", Count of vowels = " << VowelsCount(mv);
 		break;
 	default:
 		ofst << "Incorrect movie!" << endl;

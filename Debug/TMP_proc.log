@@ -1,18 +1,6 @@
-﻿  Cartoon_In.cpp
-  Cartoon_Out.cpp
-  Container_Constr.cpp
-D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  Container_In.cpp
-D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  Container_Out.cpp
-D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  Documentary_In.cpp
+﻿  Documentary_In.cpp
   Documentary_Out.cpp
-  Fiction_In.cpp
-  Fiction_Out.cpp
   Movie_In.cpp
-D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  Movie_Out.cpp
 D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
   main.cpp
 D:\TMP\TMP_proc\Movie.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline

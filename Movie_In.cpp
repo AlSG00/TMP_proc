@@ -6,7 +6,6 @@
 
 using namespace std;
 
-// Сигнатуры требуемых внешних функций
 void InCartoon(Cartoon &c, ifstream& ifst);
 void InFiction(Fiction &f, ifstream& ifst);
 void InDocumentary(Documentary& d, ifstream& ifst);
@@ -14,7 +13,7 @@ void InDocumentary(Documentary& d, ifstream& ifst);
 Movie* In(ifstream& ifst)
 {
 	Movie* mv;
-	string Line; //Временное решение на случай переполнения
+	string Line;
 	int key;
 	ifst >> key;
 	
@@ -77,7 +76,7 @@ Movie* In(ifstream& ifst)
 			Line.clear();
 			return mv;
 		default:
-			char Junk[50]; //для мусора
+			char Junk[50];
 			ifst.getline(Junk, 50);
 			ifst.getline(Junk, 50);
 			ifst.getline(Junk, 50);

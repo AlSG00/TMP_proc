@@ -1,2 +1,0 @@
-Container contains 1 elements.
-0: It is FICTION movie called add, Director's name = dirName, Made in : Rus, Count of vowels = 1

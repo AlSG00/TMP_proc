@@ -1,0 +1,8 @@
+Container contains 7 elements.
+0: It is CARTOON movie called 1, Creation type = Ragdoll, Made in : 1, Count of vowels = 0
+1: It is CARTOON movie called 1, Creation type = Ragdoll, Made in : 1, Count of vowels = 0
+2: It is CARTOON movie called 1, Creation type = Ragdoll, Made in : 1, Count of vowels = 0
+3: It is CARTOON movie called 1, Creation type = Ragdoll, Made in : 1, Count of vowels = 0
+4: It is CARTOON movie called 1, Creation type = Ragdoll, Made in : 1, Count of vowels = 0
+5: It is CARTOON movie called 1, Creation type = Ragdoll, Made in : 1, Count of vowels = 0
+6: It is CARTOON movie called 1, Creation type = Ragdoll, Made in : 1, Count of vowels = 0

@@ -5,8 +5,7 @@ void Init(Container& c)
 { 
     c.len = 0; 
 }
-// Очистка контейнера от элементов
-// (освобождение памяти)
+
 void Clear(Container& c) 
 {
     for (int i = 0; i < c.len; i++) {

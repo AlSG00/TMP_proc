@@ -1,0 +1,3 @@
+Container contains 2 elements.
+0: It is FICTION movie called ffff, Director's name = NoName, Made in : Eng, Count of vowels = 0
+1: It is FICTION movie called add, Director's name = dirName, Made in : Rus, Count of vowels = 1
